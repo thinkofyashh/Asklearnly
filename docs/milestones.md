@@ -19,7 +19,7 @@ This tracker records learning scope, implementation work, verification, and proo
 | --- | --- | ---: | ---: | --- | --- |
 | 1. RAG and project foundation | Completed | 12 h | Not recorded | Week 1 | Yash / Shared |
 | 2. AskLearnly interface | Completed | Not recorded | Not recorded | Completed | Frontend |
-| 3. Document loading and Learnly synchronization | Not started | 28 h | — | Week 2 | Yash |
+| 3. Document loading and Learnly synchronization | In progress | 28 h | — | Week 2 | Yash |
 | 4. Chunking and metadata | Not started | 32 h | — | Week 4 | Yash / Frontend |
 | 5. Embeddings and exact vector retrieval | Not started | 40 h | — | Week 6 | Yash / Frontend |
 | 6. Grounded answers and streaming | Not started | 24 h | — | Week 7 | Shared |
@@ -128,7 +128,7 @@ The responsive AskLearnly workspace presents source selection, conversation, evi
 
 ## Milestone 3 — Document loading and Learnly synchronization
 
-- **Status:** Not started
+- **Status:** In progress
 - **Estimate:** 28 hours
 - **Actual:** —
 - **Owner:** Yash; frontend connection support as needed
@@ -178,7 +178,8 @@ AskLearnly can synchronize the published Learnly collection repeatedly, preserve
 
 ### Notes and blockers
 
-- Learnly's current general document response does not expose `checksum_sha256`; add it or create a dedicated published-document synchronization response.
+- Current task: define and test the minimal published-document contract between Learnly and AskLearnly.
+- Learnly's current general document response does not expose `checksum_sha256` or `mime_type`; add them or create a dedicated published-document synchronization response.
 - The integration response must provide a usable PDF download URL and must never expose `storage_key`.
 
 ## Milestone 4 — Chunking and metadata
